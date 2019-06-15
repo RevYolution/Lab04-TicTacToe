@@ -6,7 +6,7 @@ namespace Lab04_TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PlayGame();
         }
 
         // TODO: Setup your game. Create a new method that creates your players and instantiates the game class. 
