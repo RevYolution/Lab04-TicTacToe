@@ -15,7 +15,7 @@ Console Application Tic-Tac-Toe game. Allows users to play Tic-Tac-Toe within th
 ## Getting Started
 Clone this repository to your local machine.
 ```
-$ git clone [repo clone url here]
+$ git clone [https://github.com/RevYolution/Lab04-TicTacToe.git]
 ```
 #### To run the program from Visual Studio:
 Select ```File``` -> ```Open``` -> ```Project/Solution```
