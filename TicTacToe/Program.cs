@@ -23,11 +23,24 @@ namespace Lab04_TicTacToe
                     Marker = "X"
                 };
 
-            }
+                Console.WriteLine("Player 2: What is your name?");
+                playerOne playerTwo = new Player()
+                {
+                    Name = Console.ReadLine(),
+                    IsTurn = true,
+                    Marker = "O"
+                };
+
+                Game game = new Game(playerOne, playerTwo);
+                Player winner = game.Play();
+
+                if(winner is null) Console.WriteLine("Draw!!");
+                else Console.WriteLine($"{winner.Name} is the winner!?!");
+
+                Console.WriteLine("Play Again?");
+                Console.WriteLine("Enter yes to play again, anything else will exit.");
+            } while (Console.ReadLine().ToLower() == "yes");
 
         }
-
-        // TODO: Setup your game. Create a new method that creates your players and instantiates the game class. 
-        // You are requesting a Winner to be returned, Determine who the winner is output the celebratory message to the correct player. If it's a draw, tell them. 
     }
 }
