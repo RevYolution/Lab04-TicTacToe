@@ -33,6 +33,16 @@ namespace TicTacToeTests
         }
 
         [Fact]
+        public void CanSwitchPlayers()
+        {
+            Player one = new Player() { IsTurn = true };
+            Player two = new Player();
+            Game testGame = new Game(one, two);
+            testGame.SwitchPlayer();
+            Assert.False(one.IsTurn);
+        }
+
+        [Fact]
         public void CanMoveToNextPlayer()
         {
             Player one = new Player() { Name = "Winnie" };
@@ -42,6 +52,16 @@ namespace TicTacToeTests
             Player move = testGame.NextPlayer();
 
             Assert.Equal(two.Name, move.Name);
+        }
+
+        [Fact]
+        public void CanPlaceMarkerOnBoard()
+        {
+            Player testPlay = new Player() { Marker = "O" };
+            Game testPlacement = new Game(testPlay, new Player());
+            Position testPosition = Player.PositionForNumber(5);
+            testPlacement.Board.GameBoard[testPosition.Row, testPosition.Column] = testPlay.Marker;
+            Assert.Equal(testPlacement.Board.GameBoard[1, 1], testPlay.Marker);
         }
 
     }
