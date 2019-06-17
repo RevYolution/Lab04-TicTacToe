@@ -16,7 +16,7 @@ namespace Lab04_TicTacToe
                 Console.Clear();
                 Console.WriteLine("Let's Play Tic-Tac-Toe");
                 Console.WriteLine("Player 1: What is your name?");
-                Player playerOne = new Player()
+                Classes.Player playerOne = new Classes.Player()
                 {
                     Name = Console.ReadLine(),
                     IsTurn = true, 
@@ -24,15 +24,15 @@ namespace Lab04_TicTacToe
                 };
 
                 Console.WriteLine("Player 2: What is your name?");
-                playerOne playerTwo = new Player()
+                Classes.Player playerTwo = new Classes.Player()
                 {
                     Name = Console.ReadLine(),
                     IsTurn = true,
                     Marker = "O"
                 };
 
-                Game game = new Game(playerOne, playerTwo);
-                Player winner = game.Play();
+                Classes.Game game = new Classes.Game(playerOne, playerTwo);
+                Classes.Player winner = game.Play();
 
                 if(winner is null) Console.WriteLine("Draw!!");
                 else Console.WriteLine($"{winner.Name} is the winner!?!");
