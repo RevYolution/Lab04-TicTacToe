@@ -38,7 +38,7 @@ Players rotate picking numbers from the board until three markers in a row are p
 ![TicTacToePlaying](https://user-images.githubusercontent.com/47017138/59636954-9a3e0600-9109-11e9-9bea-244e53a8f89c.PNG)
 ##### Application End
 Once a winner is decided it is possible to play agian. 
-[TicTacToeEnd](https://user-images.githubusercontent.com/47017138/59636953-9a3e0600-9109-11e9-87e9-2e340669e765.PNG)
+![TicTacToeEnd](https://user-images.githubusercontent.com/47017138/59636953-9a3e0600-9109-11e9-87e9-2e340669e765.PNG)
 ------------------------------
 
 ## Change Log
